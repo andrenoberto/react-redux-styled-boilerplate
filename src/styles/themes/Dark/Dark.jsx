@@ -31,4 +31,4 @@ function DarkTheme({ children }) {
   );
 }
 
-export default darkTheme;
+export default DarkTheme;

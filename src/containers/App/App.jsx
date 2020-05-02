@@ -1,17 +1,22 @@
 import React, { Suspense } from 'react';
-import { Provider } from 'react-redux';
 import { ConnectedRouter } from 'connected-react-router';
+import { Provider } from 'react-redux';
 
-import { history, store } from 'redux/store';
 import { RouteSwitch } from 'containers';
+import { history, store } from 'redux/store';
+import { GlobalStyle } from 'styles/components';
+import { DarkTheme } from 'styles/themes';
 
 function App() {
   return (
     <Provider {...{ store }}>
       <ConnectedRouter {...{ history }}>
-        <Suspense fallback={<h1>Loading...</h1>}>
-          <RouteSwitch />
-        </Suspense>
+        <DarkTheme>
+          <GlobalStyle />
+          <Suspense fallback={<h1>Loading...</h1>}>
+            <RouteSwitch />
+          </Suspense>`
+        </DarkTheme>
       </ConnectedRouter>
     </Provider>
   );
