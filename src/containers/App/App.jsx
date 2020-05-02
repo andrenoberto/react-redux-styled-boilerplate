@@ -1,12 +1,19 @@
-import React from 'react';
+import React, { Suspense } from 'react';
+import { Provider } from 'react-redux';
+import { ConnectedRouter } from 'connected-react-router';
 
-import { App as AppComponent } from 'components';
+import { history, store } from 'redux/store';
+import { RouteSwitch } from 'containers';
 
 function App() {
   return (
-    <React.StrictMode>
-      <AppComponent />
-    </React.StrictMode>
+    <Provider {...{ store }}>
+      <ConnectedRouter {...{ history }}>
+        <Suspense fallback={<h1>Loading...</h1>}>
+          <RouteSwitch />
+        </Suspense>
+      </ConnectedRouter>
+    </Provider>
   );
 }
 
