@@ -15,7 +15,7 @@ function App() {
           <GlobalStyle />
           <Suspense fallback={<h1>Loading...</h1>}>
             <RouteSwitch />
-          </Suspense>`
+          </Suspense>
         </DarkTheme>
       </ConnectedRouter>
     </Provider>
