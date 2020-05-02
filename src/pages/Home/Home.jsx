@@ -9,7 +9,7 @@ function HomePage() {
     <Header>
       <LogoImage animation={rotate} src={logo} alt="logo" />
       <Paragraph>
-        Edit <code>src/pages/Home.jsx</code> and save to reload.
+        Edit <code>src/pages/Home/Home.jsx</code> and save to reload.
       </Paragraph>
       <Link
         href="https://reactjs.org"
