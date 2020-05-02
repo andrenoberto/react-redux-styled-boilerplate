@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-import { lightTheme } from 'styles/themes';
+import { darkTheme } from 'styles/themes';
 
 const Header = styled.header`
   align-items: center;
@@ -16,8 +16,8 @@ const Header = styled.header`
 
 Header.defaultProps = {
   theme: {
-    background: lightTheme.background,
-    color: lightTheme.color,
+    background: darkTheme.background,
+    color: darkTheme.color,
   }
 };
 Header.propTypes = {
