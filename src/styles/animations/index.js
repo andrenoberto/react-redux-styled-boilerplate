@@ -1,1 +1,1 @@
-export { default as rotate } from './rotate/rotate';
+export * from './rotate/rotate';

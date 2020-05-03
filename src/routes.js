@@ -6,5 +6,5 @@ export const routes = [
     exact: true,
     key: 'home',
     path: '/',
-  }
+  },
 ];

@@ -19,16 +19,12 @@ export const darkTheme = {
     smoothing: {
       default: 'antialiased',
       osx: 'grayscale',
-    }
+    },
   },
 };
 
 function DarkTheme({ children }) {
-  return (
-    <ThemeProvider {...{ theme: darkTheme }}>
-      {children}
-    </ThemeProvider>
-  );
+  return <ThemeProvider {...{ theme: darkTheme }}>{children}</ThemeProvider>;
 }
 
 export default DarkTheme;

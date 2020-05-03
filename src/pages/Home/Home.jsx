@@ -1,7 +1,12 @@
 import React from 'react';
 
 import { logo } from 'assets/images';
-import { Header, Link, LogoImage, Paragraph } from 'components/Atoms/components';
+import {
+  Header,
+  Link,
+  LogoImage,
+  Paragraph,
+} from 'components/Atoms/components';
 import { rotate } from 'styles/animations';
 
 function HomePage() {

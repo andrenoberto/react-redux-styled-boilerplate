@@ -1,6 +1,6 @@
 import { keyframes } from 'styled-components';
 
-const rotate = keyframes`
+export const rotate = keyframes`
   from {
     transform: rotate(0deg);
   }
@@ -8,5 +8,3 @@ const rotate = keyframes`
     transform: rotate(360deg);
   }
 `;
-
-export default rotate;

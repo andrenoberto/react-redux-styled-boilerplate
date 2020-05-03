@@ -18,7 +18,7 @@ Header.defaultProps = {
   theme: {
     background: darkTheme.background,
     color: darkTheme.color,
-  }
+  },
 };
 Header.propTypes = {
   theme: PropTypes.object,

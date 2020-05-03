@@ -9,7 +9,11 @@ const Image = styled.img`
 Image.propTypes = imageProps;
 
 export const LogoImage = styled(Image).attrs(props => ({
-  animation: props.animation ? css`${props.animation} infinite 20s linear` : 'none',
+  animation: props.animation
+    ? css`
+        ${props.animation} infinite 20s linear
+      `
+    : 'none',
 }))`
   animation: ${props => props.animation};
   height: 40vmin;
