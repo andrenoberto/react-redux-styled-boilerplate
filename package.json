@@ -56,12 +56,20 @@
     "eslint-plugin-react": "^7.19.0",
     "eslint-plugin-react-hooks": "^2.5.1",
     "husky": "^4.2.5",
+    "lint-staged": "^10.2.2",
     "prettier": "^2.0.5"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run lint && npm run prettier:fix",
-      "pre-push": "npm run test"
+      "pre-commit": "lint-staged"
     }
+  },
+  "lint-staged": {
+    "*.+(js|jsx)": [
+      "eslint --fix"
+    ],
+    "*.+(js|jsx|json|css|md)": [
+      "prettier --write"
+    ]
   }
 }
